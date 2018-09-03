@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="movie.css">
+    <script src="movies.js"></script>
+</head>
+
+<body>
+    <h1 id="headline">MOVIES DATABASE</h1>
+    <div class="container">
+        <div class=" search">
+            <input type="text" id="searchKeyword" paceholder="search">
+            <button onclick="loadXMLDoc()">Submit</button>
+            <button onclick="sortTableAlpha()">Sort Data by Alphabetically</button>
+            <button onclick="sortTableYear()">Sort Data By Year</button>
+
+        </div>
+    </div>
+    <div class="displayArea">
+
+        <table class="display" id="tableContainer">
+            <tr>
+                <th>title</th>
+                <th>release_date</th>
+
+            </tr>
+
+
+            <tbody class="display" id="DisplayTable">
+
+            </tbody>
+        </table>
+        <script id="moviedata" type="text/template">
+            <tr>
+                <td id="title">{{title}}</td>
+                <td id="release_date">{{release_date}}</td>
+
+            </tr>
+        </script>
+    </div>
+</body>
+
+</html>

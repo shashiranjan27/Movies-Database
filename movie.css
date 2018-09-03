@@ -1,0 +1,31 @@
+.display {
+    width: 100%;
+}
+.container{
+    margin: 30px;
+    font-family: sans-serif;
+    color: dimgrey;
+}
+
+table,
+th,
+td {
+
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+th {
+    min-width: 50%;
+}
+#headline{
+    text-align: center;
+    color: darkblue;
+    font-family: sans-serif;
+    font-weight: 300;
+}
